@@ -1,26 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaYoutube, FaWhatsapp } from "react-icons/fa";
-import bg from "../assets/bg.jpg"; // Make sure your image is in the correct path
+import bg from "../assets/bg.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center mt-15 mb-5">
-      {/* Background Image - full shown */}
+    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+      {/* Background Image */}
       <img
         src={bg}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-contain"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Glowing Flame Effects (Aura) */}
-      <div className="absolute top-20 left-1/4 w-52 h-52 bg-indigo-500 opacity-50 rounded-full blur-3xl animate-ping" />
-      <div className="absolute bottom-20 right-1/4 w-44 h-44 bg-purple-500 opacity-40 rounded-full blur-2xl animate-pulse" />
+      {/* Flame Effects */}
+      <div className="absolute top-16 left-1/4 w-36 h-36 md:w-52 md:h-52 bg-indigo-500 opacity-50 rounded-full blur-3xl animate-ping" />
+      <div className="absolute bottom-16 right-1/4 w-32 h-32 md:w-44 md:h-44 bg-purple-500 opacity-40 rounded-full blur-2xl animate-pulse" />
 
-      {/* Main Content */}
+      {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-3xl">
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -29,7 +29,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.h3
-          className="mt-3 text-lg md:text-2xl text-purple-300 font-semibold animate-pulse"
+          className="mt-2 sm:mt-3 text-base sm:text-lg md:text-2xl text-purple-300 font-semibold animate-pulse"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
@@ -38,7 +38,7 @@ export default function Hero() {
         </motion.h3>
 
         <motion.p
-          className="mt-4 text-base md:text-lg text-gray-300"
+          className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-gray-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
@@ -48,7 +48,7 @@ export default function Hero() {
 
         <motion.a
           href="#projects"
-          className="mt-6 inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-full font-medium hover:scale-105 transition-transform duration-300 shadow-lg"
+          className="mt-5 sm:mt-6 inline-block px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-full font-medium hover:scale-105 transition-transform duration-300 shadow-lg"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
@@ -58,7 +58,7 @@ export default function Hero() {
 
         {/* Social Icons */}
         <motion.div
-          className="mt-10 flex justify-center gap-10 text-5xl" // increased icon size
+          className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-6 sm:gap-10 text-3xl sm:text-4xl md:text-5xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
