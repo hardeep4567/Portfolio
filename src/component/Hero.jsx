@@ -64,7 +64,7 @@ export default function Hero() {
           transition={{ delay: 1 }}
         >
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/hardeep4567"
             target="_blank"
             rel="noreferrer"
             className="hover:text-gray-400 transition-transform hover:scale-125"
@@ -72,7 +72,7 @@ export default function Hero() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/hardeep-singh-3762ab2ba"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-400 transition-transform hover:scale-125"
