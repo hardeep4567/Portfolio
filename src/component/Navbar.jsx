@@ -19,7 +19,7 @@ export default function Navbar() {
           className="text-lg md:text-xl lg:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-lg z-10"
           whileHover={{ scale: 1.1 }}
         >
-          Protofolio
+          Portfolio
         </motion.h1>
 
         {/* Nav Links */}
