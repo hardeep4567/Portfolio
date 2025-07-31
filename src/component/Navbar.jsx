@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { HiMenuAlt3, HiX } from "react-icons/hi"; // Hamburger icons
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const navItems = ["About", "Experience", "Projects", "Contact"];
+
   return (
     <motion.nav
       className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md shadow-lg"
@@ -22,9 +29,9 @@ export default function Navbar() {
           Portfolio
         </motion.h1>
 
-        {/* Nav Links */}
+        {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-4 md:space-x-6 text-white font-medium z-10">
-          {["About", "Experience", "Projects", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <motion.li
               key={item}
               whileHover={{ scale: 1.2 }}
@@ -41,6 +48,37 @@ export default function Navbar() {
             </motion.li>
           ))}
         </ul>
+
+        {/* Mobile Toggler */}
+        <div className="md:hidden z-20 text-white">
+          {isOpen ? (
+            <HiX size={28} onClick={toggleMenu} className="cursor-pointer" />
+          ) : (
+            <HiMenuAlt3 size={28} onClick={toggleMenu} className="cursor-pointer" />
+          )}
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <motion.ul
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-16 right-4 w-48 bg-zinc-900 border border-purple-500 rounded-lg p-4 space-y-4 shadow-lg md:hidden z-10"
+          >
+            {navItems.map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  onClick={() => setIsOpen(false)}
+                  className="block text-white hover:text-purple-400 transition-all"
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
+          </motion.ul>
+        )}
       </div>
     </motion.nav>
   );

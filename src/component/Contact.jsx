@@ -12,16 +12,16 @@ export default function Contact() {
         {/* Email */}
         <div className="flex items-center gap-4 p-4 rounded-lg border border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition">
           <FaEnvelope className="text-purple-400 text-xl" />
-          <a href="mailto:youremail@example.com" className="hover:underline text-gray-300">
-            youremail@example.com
+          <a href="singh123hardeep546@gmail.com" className="hover:underline text-gray-300">
+            singh123hardeep546@gmail.com
           </a>
         </div>
 
         {/* Phone */}
         <div className="flex items-center gap-4 p-4 rounded-lg border border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition">
           <FaPhoneAlt className="text-purple-400 text-xl" />
-          <a href="tel:+911234567890" className="hover:underline text-gray-300">
-            +91 12345 67890
+          <a href="tel:+91 6280666620" className="hover:underline text-gray-300">
+            +91 62806 66620
           </a>
         </div>
 
@@ -29,7 +29,7 @@ export default function Contact() {
         <div className="flex items-center gap-4 p-4 rounded-lg border border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition">
           <FaGithub className="text-purple-400 text-xl" />
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/hardeep4567"
             target="_blank"
             rel="noreferrer"
             className="hover:underline text-gray-300"
@@ -42,7 +42,7 @@ export default function Contact() {
         <div className="flex items-center gap-4 p-4 rounded-lg border border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition">
           <FaLinkedin className="text-purple-400 text-xl" />
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/hardeep-singh-3762ab2ba/"
             target="_blank"
             rel="noreferrer"
             className="hover:underline text-gray-300"
@@ -54,7 +54,7 @@ export default function Contact() {
         {/* Location */}
         <div className="flex items-center gap-4 p-4 rounded-lg border border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition md:col-span-2">
           <FaMapMarkerAlt className="text-purple-400 text-xl" />
-          <p className="text-gray-300">New Delhi, India</p>
+          <p className="text-gray-300">Pathankot, Punjab</p>
         </div>
       </div>
     </section>
