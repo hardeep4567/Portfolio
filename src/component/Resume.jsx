@@ -25,7 +25,7 @@ export default function Resume() {
       </motion.p>
 
       <motion.a
-        href="/Portfolio\src\assets\resume.pdf"
+        href="/resume.pdf"  // ✅ Correct path if file is in public/
         download="resume.pdf"
         className="inline-block px-8 py-3 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white text-base sm:text-lg font-semibold rounded-full shadow-lg hover:scale-105 hover:opacity-90 transition duration-300"
         initial={{ opacity: 0 }}
