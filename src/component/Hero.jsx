@@ -29,7 +29,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.h3
-          className="mt-3 text-lg md:text-2xl lg:text-3xl text-purple-300 font-semibold animate-pulse drop-shadow"
+          className="mt-3 text-lg md:text-2xl lg:text-3xl  font-semibold animate-pulse drop-shadow"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}

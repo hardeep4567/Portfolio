@@ -34,7 +34,7 @@ export default function Contact() {
             rel="noreferrer"
             className="hover:underline text-gray-300"
           >
-            github.com/yourusername
+            https://github.com/hardeep4567
           </a>
         </div>
 
@@ -47,7 +47,7 @@ export default function Contact() {
             rel="noreferrer"
             className="hover:underline text-gray-300"
           >
-            linkedin.com/in/yourusername
+            https://www.linkedin.com/in/hardeep-singh-3762ab2ba/
           </a>
         </div>
 
