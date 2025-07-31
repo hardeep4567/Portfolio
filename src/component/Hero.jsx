@@ -34,7 +34,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          Shadow Monarch | React Developer | Anime Lover
+           Mern Stack Developer 
         </motion.h3>
 
         <motion.p
